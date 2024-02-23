@@ -1,6 +1,9 @@
 package com.codigo.mscamposrodriguez.application.controller;
 
 
+import com.codigo.mscamposrodriguez.domain.aggregates.dto.TipoDocumentoDTO;
+import com.codigo.mscamposrodriguez.domain.aggregates.request.RequestTipoDocumento;
+import com.codigo.mscamposrodriguez.domain.ports.in.TipoDocumentoServiceIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

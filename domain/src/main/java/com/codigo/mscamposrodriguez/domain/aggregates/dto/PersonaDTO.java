@@ -1,15 +1,16 @@
 package com.codigo.mscamposrodriguez.domain.aggregates.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Timestamp;
+
 @Getter
 @Setter
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_NULL) // esto no mostrara los valores nulos
 public class PersonaDTO {
+
     private Long idPersona;
     private String numDocu;
     private String nombres;

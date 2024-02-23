@@ -14,7 +14,7 @@ public class RestReniecAdapter {
     @Value("${token.api}")
     private String tokenApi;
 
-    @Override
+
     public ResponseReniec getInfoReniec(String numDoc) {
         String authorization = "Bearer " + tokenApi;
         ResponseReniec responseReniec = reniec.getInfoReniec(numDoc,authorization);

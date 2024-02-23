@@ -1,11 +1,10 @@
 package com.codigo.mscamposrodriguez.domain.aggregates.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-
 import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Timestamp;
+
 @Getter
 @Setter
 public class TipoDocumentoDTO {
@@ -19,5 +18,4 @@ public class TipoDocumentoDTO {
     private Timestamp dateModif;
     private String usuaDelet;
     private Timestamp dateDelet;
-
 }
